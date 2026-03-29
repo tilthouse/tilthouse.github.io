@@ -132,6 +132,25 @@
       animation: fade 1.2s 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
     }
 
+    .projects {
+      margin-top: 1.8rem;
+      animation: fade 1.2s 1.2s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    .projects a {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.1rem;
+      color: var(--accent);
+      text-decoration: none;
+      letter-spacing: 0.01em;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.3s;
+    }
+
+    .projects a:hover {
+      border-bottom-color: var(--accent);
+    }
+
     @keyframes fade {
       from { opacity: 0; transform: translateY(8px); }
       to { opacity: 1; transform: translateY(0); }
@@ -170,6 +189,9 @@
       <h1>Tilt<span class="accent">house</span></h1>
       <div class="divider"></div>
       <p class="tagline">More to come</p>
+      <div class="projects">
+        <a href="/woso-viz/">WosoViz</a>
+      </div>
     </div>
   </main>
 </body>
